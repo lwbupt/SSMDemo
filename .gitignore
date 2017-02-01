@@ -1,0 +1,33 @@
+#target ignore#
+target/
+*.jar
+*.war
+*.ear
+*.zip
+*.tar
+*.tar.gz
+
+# eclipse ignore
+.settings/
+.project
+.classpath
+
+#logs ignore#
+logs/
+
+
+#temp ignore#
+*.log
+*.cache
+*.diff
+*.patch
+*.tmp
+*.java~
+*.properties~
+*.xml~
+
+#system ignore#
+.DS_Store
+Thumbs.db
+Servers
+.metadata
