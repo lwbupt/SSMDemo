@@ -19,6 +19,22 @@ public class LoginController {
 	
 	private Logger logger = Logger.getLogger(LoginController.class);
 	
+	/**
+	 * 根据索引号跳转页面
+	 * @param num
+	 * @return
+	 * 001->二维码页面QR-code.jsp
+	 */
+	@RequestMapping(value= "index")
+	public String index(String num){
+		if(num.equals("001")){
+			return "QR-code";
+		}
+		else{
+			return "login";
+		}
+	}
+	
 	@RequestMapping(value = "/login",method=RequestMethod.GET)
 	public String login(){
 		return "login";
